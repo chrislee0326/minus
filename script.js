@@ -9,9 +9,7 @@ function make() if (debounceTimer) {
         do {
             b = Math.floor(Math.random() * 10); // b 는 0 이상 10 미만의 정수
         } while (!(a - 10 < b)); // a - 10 < b 조건을 만족할 때까지 반복
-        f = a;
-        s = b;
-        result = f - s;
+        result = a - b;
         document.getElementById("output").innerHTML = a + "-" + b + "=";
     }, 250); // 250밀리초 동안 추가 호출을 방지
 
