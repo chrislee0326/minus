@@ -5,7 +5,7 @@ function make() {
         clearTimeout(debounceTimer); // 이미 타이머가 설정되어 있다면 초기화
     }
     debounceTimer = setTimeout(function() {
-        var a = Math.floor(Math.random() * (20 - 10)) + 10; // a 는 10 이상 20 미만의 정수
+        var a = Math.floor(Math.random() * (19 - 10)) + 10; // a 는 10 이상 20 미만의 정수
         var b;
         do {
             b = Math.floor(Math.random() * 10); // b 는 0 이상 10 미만의 정수
