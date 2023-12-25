@@ -1,6 +1,7 @@
-var f, s, result;
+var result;
 var debounceTimer;
-function make() if (debounceTimer) {
+function make() {
+    if (debounceTimer) {
         clearTimeout(debounceTimer); // 이미 타이머가 설정되어 있다면 초기화
     }
     debounceTimer = setTimeout(function() {
@@ -12,6 +13,7 @@ function make() if (debounceTimer) {
         result = a - b;
         document.getElementById("output").innerHTML = a + "-" + b + "=";
     }, 250); // 250밀리초 동안 추가 호출을 방지
+}
 
 function output() {
     document.getElementById("output").innerHTML = result;
